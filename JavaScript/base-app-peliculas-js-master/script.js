@@ -3,7 +3,7 @@ document.getElementById('searchButton').addEventListener('click', searchMovies)
 let urlBase = 'https://api.themoviedb.org/3/search/movie'
 let apiKey= 'c98d87a0791b3d543f87a37131b0e9cd'
 let urlPoster ='https://image.tmdb.org/t/p/w500'
-
+let fe = `${urlBase}?api_key=${apiKey}&query=${searchInput}`
 
 
 
@@ -11,7 +11,7 @@ function searchMovies(){
 
     let searchInput = document.getElementById('searchInput').value
     
-    fetch(`${urlBase}?api_key=${apiKey}&query=${searchInput}`)
+    fetch(fe)
     .then(response => response.json())
     .then(response => displayMovies(response.results))
 
