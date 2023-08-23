@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(24, 23, 23, 0.904);
+    color: white;
+}
+
+h1{
+    background-color: yellow;
+    display: inline-block;
+    color: black;
+    border-bottom-right-radius: 5px;
+    width: 200px;
+}
+
+
+
+
