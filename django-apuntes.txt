@@ -293,4 +293,9 @@ f1 - select interpreter - venv: venv
 .\venv\Scripts\active
 virtualenv venv
 pip install virtualenv
+
+Si no funciona se tienen que modificar las variables de entorno PATH:
+
+
+
 crear una carpeta djangoproject
