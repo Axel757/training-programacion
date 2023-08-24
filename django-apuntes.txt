@@ -325,8 +325,9 @@ f1 - select interpreter - venv: venv
 virtualenv venv
 pip install virtualenv
 
-Si no funciona se tienen que modificar las variables de entorno PATH:
-
-
-
+Si no funciona se tienen que modificar las variables de entorno PATH
+se copian y pegan las urls de los warnings al momento de instalar lo anterior
+py get-pip.py
+get-pip.py
+Alias
 crear una carpeta djangoproject
