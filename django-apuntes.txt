@@ -265,6 +265,37 @@ Se requiere de modificar las rutas del projecto en
 urls.py para ingresar a los archivos de la aplicacion 
 que se requiere acceder
 
+Views.py:
+
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+def hello(request):
+    return HttpResponse("<h1>Hola Mundo</h1>")
+
+myapp:
+
+from . import views
+from django.urls import path
+from django.contrib import admin
+
+urlpatterns = [
+        path('admin/', admin.site.urls),
+        path("hello/", views.hello)
+]
+
+mysite: 
+
+from django.contrib import admin
+from django.urls import path, include
+from myapp import views
+
+urlpatterns = [
+
+    path('', include('myapp.urls'))
+]
+
 
 Runserver:
 
